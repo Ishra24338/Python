@@ -27,8 +27,34 @@ print("Mission Count As Text:",mission_count_text,"->type:",type(mission_count_t
 print("Speed Rating As Text:",speed_rating_text,"->type:",type(speed_rating_text))
 print("Status As Text:",status_text,"->type:",type(status_text))
 
+#Create a code name
+first_three = name[0:3]
+last_letter = name[-1:]
+code_name= first_three + last_letter
+print("First three letters of name:",first_three)
+print("Last letter of name:",last_letter)
+print("Secret code name:",code_name)
+
+#Reverse the gadget name
+reversed_gadget = gadget[::-1]
+print("Reversed gadget name :",reversed_gadget)
+
+#Join together to make badge
+badge_line_1="AGENT"+code_name.upper()
+badge_line_2="ID:" + agent_number_text + "| MISSIONS:" + mission_count_text
+badge_line_3="SPEED:" + speed_rating_text + "|ACTIVE:"+ status_text
+badge_line_4="SECRET GADGET CODE:" + reversed_gadget.upper()
+
+#Print badge
+print("")
+print("======== =SECRET AGENT BADGE=========")
+print(badge_line_1)
+print(badge_line_2)
+print(badge_line_3)
+print(badge_line_4)
+print("======================================")
 
 
 
 
-
+ 
